@@ -1,0 +1,13 @@
+
+1) Copiar package.json pre-configurado
+2) npm install
+
+Caso ainda não esteja no package.json, rodar:
+npm install jest jest-each 
+npm install @babel/core @babel/preset-env @babel/node @babel/plugin-proposal-class-properties --dev
+
+--only=dev
+npm install jest -d
+
+
+npm run test
