@@ -43,13 +43,69 @@ export function firstNonRepeatingElement(array) {
       values[keyIndex] = values[keyIndex] + 1;
     }
   }
-  console.log("Keys", keys, "Values", values);
-  console.log("Keys[0]", keys[0], "Keys[1]", keys[1]);
-  console.log("values[0]", values[0], "values[1]", values[1]);
 
   for (let i = 0; i < values.length; i++) {
     if (values[i] == 1) return keys[i];
   }
 
   return Number.MAX_SAFE_INTEGER;
+}
+
+export function mergeTwoSortedArrays(array1, array2) {
+  let result = [];
+  let i = 0;
+  let i1 = 0;
+  let i2 = 0;
+  let exhausted1 = i1 >= array1.length;
+  let exhausted2 = i2 >= array2.length;
+
+  while (!exhausted1 || !exhausted2) {
+    if (!exhausted1 && !exhausted2) {
+      if (array1[i1] < array2[i2]) {
+        result[i++] = array1[i1++];
+      } else {
+        result[i++] = array2[i2++];
+      }
+    } else if (exhausted1) {
+      result[i++] = array2[i2++];
+    } else {
+      result[i++] = array1[i1++];
+    }
+    exhausted1 = i1 >= array1.length;
+    exhausted2 = i2 >= array2.length;
+  }
+  return result;
+}
+
+export function rearrangePositiveNegative(array) {
+  const pivot = 0;
+  let i = 0;
+  let b = -1;
+
+  while (i < array.length) {
+    if (array[i] < pivot) {
+      b++;
+      swap(array, b, i);
+    }
+    i++;
+  }
+  i = 0;
+  let result = [];
+  let iPositive = b + 1;
+  let iNegative = 0;
+
+  while (iNegative <= b || iPositive < array.length) {
+    if (iPositive < array.length) result[i++] = array[iPositive++];
+    if (iNegative <= b) result[i++] = array[iNegative++];
+  }
+
+  return result;
+
+  function swap(array, i1, i2) {
+    var temp = array[i1];
+    array[i1] = array[i2];
+    array[i2] = temp;
+  }
+
+  // }
 }
