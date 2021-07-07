@@ -107,5 +107,4 @@ export function rearrangePositiveNegative(array) {
     array[i2] = temp;
   }
 
-  // }
 }
