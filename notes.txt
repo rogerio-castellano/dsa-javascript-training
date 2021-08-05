@@ -9,5 +9,15 @@ npm install @babel/core @babel/preset-env @babel/node @babel/plugin-proposal-cla
 --only=dev
 npm install jest -d
 
-
 npm run test
+
+npm i -g jest-cli
+jest essential/sorting
+
+
+export class LinkedList {
+  constructor(name) {
+    this.name = name;
+  }
+}
+ 

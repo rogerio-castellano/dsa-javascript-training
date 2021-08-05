@@ -8,7 +8,7 @@ import {
   firstNonRepeatingElement,
   mergeTwoSortedArrays,
   rearrangePositiveNegative,
-} from "./array";
+} from "./array-algorithms";
 import each from "jest-each";
 
 describe("Array tests", () => {
