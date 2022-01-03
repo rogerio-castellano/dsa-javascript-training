@@ -2,6 +2,8 @@
 1) Copiar package.json pre-configurado
 2) npm install
 
+***** É ESSENCIAL TER O ARQUIVO .babelrc.json PARA RODAR OS TESTES
+
 Caso ainda não esteja no package.json, rodar:
 npm install jest jest-each 
 npm install @babel/core @babel/preset-env @babel/node @babel/plugin-proposal-class-properties --dev
