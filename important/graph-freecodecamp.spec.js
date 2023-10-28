@@ -1,6 +1,6 @@
 import {
   average
-} from "./graph";
+} from "./graph-freecodecamp";
 import each from "jest-each";
 
 describe("Graph tests", () => {

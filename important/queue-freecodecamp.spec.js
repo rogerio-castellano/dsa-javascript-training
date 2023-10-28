@@ -1,6 +1,6 @@
 import {
   average
-} from "./queue";
+} from "./queue-freecodecamp";
 import each from "jest-each";
 
 describe("Queue tests", () => {

@@ -1,6 +1,6 @@
 import {
   average
-} from "./hash-table";
+} from "./hash-table-freecodecamp";
 import each from "jest-each";
 
 describe("Hash table tests", () => {

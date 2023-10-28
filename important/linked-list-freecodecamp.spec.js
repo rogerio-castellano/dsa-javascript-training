@@ -1,6 +1,6 @@
 import {
   average
-} from "./linked-list-algorithms";
+} from "./linked-list-freecodecamp";
 import each from "jest-each";
 
 describe("Linked list tests", () => {

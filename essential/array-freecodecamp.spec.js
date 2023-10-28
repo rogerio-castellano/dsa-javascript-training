@@ -8,7 +8,7 @@ import {
   firstNonRepeatingElement,
   mergeTwoSortedArrays,
   rearrangePositiveNegative,
-} from "./array-algorithms";
+} from "./array-freecodecamp";
 import each from "jest-each";
 
 describe("Array tests", () => {

@@ -1,6 +1,6 @@
 import {
   average
-} from "./tree";
+} from "./tree-freecodecamp";
 import each from "jest-each";
 
 describe("Tree tests", () => {
